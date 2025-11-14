@@ -5,7 +5,7 @@ import os
 
 BOT_TOKEN = os.getenv("python-telegram-bot==20.3")
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route("/")
 def home():
